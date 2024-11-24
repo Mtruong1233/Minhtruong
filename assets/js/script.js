@@ -95,4 +95,3 @@ toggleSwitch.addEventListener("change", switchTheme);
     })()),
         n();
 })(window, document);
-                  
