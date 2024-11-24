@@ -58,16 +58,16 @@ $(document).ready(function() {
             opacity: 1,
             zIndex: '-1',
             easing: 'easeInOutQuart'
-        },'+=500')
+        },'+=20')
         .add({
             targets: '.preloader__progress span',
-            duration: 500,
+            duration: 20,
             width: '100%',
 			easing: 'easeInOutQuart'
-        },'-=500')
+        },'-=20')
         .add({
             targets: '.preloader',
-            duration: 500,
+            duration: 200,
             opacity: 0,
             zIndex: '-1',
             easing: 'easeInOutQuart'
