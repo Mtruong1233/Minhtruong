@@ -12,9 +12,9 @@
 	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 	<meta property="og:locale" content="en_US" />
 	<meta property="og:type" content="article" />
-	<meta property="og:title" content="Lấy UID & Ngày Tạo Facebook - Hồ Viết Việt Khánh" />
+	<meta property="og:title" content="Lấy UID & Ngày Tạo Facebook - Minh Truong" />
 	<meta property="og:description" content="công cụ lấy UID Facebook & kiểm tra ngày tạo tài khoản Facebook miễn phí, không giới hạn, lấy nhanh, get UID Facebook, get ID Facebook" />
-	<meta property="og:site_name" content="Hồ Viết Việt Khánh" />
+	<meta property="og:site_name" content="Minh Truong" />
 	<meta property="article:modified_time" content="2021-02-27T17:58:37+00:00" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:label1" content="Est. reading time">
