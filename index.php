@@ -34,7 +34,7 @@
                 </span>
 
                 <div class="text logo-text">
-                    <span class="name">Gia Huy</span> 
+                    <span class="name">Minh Truong</span> 
                     <span class="profession">My Profile Site</span>
                 </div>
             </div>
@@ -97,7 +97,7 @@
         <div class="BlurWebs">
 
             <div class="Topnav">
-              <title>LuuGiaHuy - Profile</title>
+              <title>LeminhTruong - Profile</title>
           </head>
           <body>
 
@@ -126,7 +126,7 @@
                  <img src="https://s120-ava-talk.zadn.vn/6/0/4/6/19/120/f887ad9bb8f8b1ad113eb72623537e0a.jpg" alt="avt" style="width:540px;height:120px;">
                               </div>
                           </div>
-                          <h2 class="profile__name">Lưu Gia Huy</h2>
+                          <h2 class="profile__name">Lê Minh Trường</h2>
                           <h3 class="profile__profession">Hello My Profile Site</h3>
                           <ul class="profile__social">
                               <a href="https://www.facebook.com/VietKhanh.User" target="_blank" class="profile__social-link">
@@ -154,7 +154,7 @@
                               </p>
                           </div>
                           <div class="profile__info-group">
-                              <h3 class="profile__info-number">Bình Thuận</h3>
+                              <h3 class="profile__info-number">Nghệ An</h3>
                               <p class="profile__info-description">Live In<br> </p>
                           </div>
                       </div>
@@ -177,7 +177,7 @@
               </header>
               <footer class="footer container">
                   <span class="footer__copy">
-                      &#169; <a href=""></a> Code by Gia Huy
+                      &#169; <a href=""></a> Code by Minh Trường 
                   </span>
               </footer>
     </section>
