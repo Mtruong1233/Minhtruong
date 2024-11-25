@@ -1,0 +1,205 @@
+<style>
+	#snowflakeContainer{position:absolute;left:0px;top:0px;}
+	.snowflake{padding-left:15px;font-size:14px;line-height:24px;position:fixed;color:#ebebeb;user-select:none;z-index:1000;-moz-user-select:none;-ms-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;}
+	.snowflake:hover {cursor:default}
+</style>
+<div id='snowflakeContainer'>
+<p class='snowflake'>❄</p>
+</div>
+<script style='text/javascript'>
+	//<![CDATA[
+	var requestAnimationFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;var transforms=["transform","msTransform","webkitTransform","mozTransform","oTransform"];var transformProperty=getSupportedPropertyName(transforms);var snowflakes=[];var browserWidth;var browserHeight;var numberOfSnowflakes=50;var resetPosition=false;function setup(){window.addEventListener("DOMContentLoaded",generateSnowflakes,false);window.addEventListener("resize",setResetFlag,false)}setup();function getSupportedPropertyName(b){for(var a=0;a<b.length;a++){if(typeof document.body.style[b[a]]!="undefined"){return b[a]}}return null}function Snowflake(b,a,d,e,c){this.element=b;this.radius=a;this.speed=d;this.xPos=e;this.yPos=c;this.counter=0;this.sign=Math.random()<0.5?1:-1;this.element.style.opacity=0.5+Math.random();this.element.style.fontSize=4+Math.random()*30+"px"}Snowflake.prototype.update=function(){this.counter+=this.speed/5000;this.xPos+=this.sign*this.speed*Math.cos(this.counter)/40;this.yPos+=Math.sin(this.counter)/40+this.speed/30;setTranslate3DTransform(this.element,Math.round(this.xPos),Math.round(this.yPos));if(this.yPos>browserHeight){this.yPos=-50}};function setTranslate3DTransform(a,c,b){var d="translate3d("+c+"px, "+b+"px, 0)";a.style[transformProperty]=d}function generateSnowflakes(){var b=document.querySelector(".snowflake");var h=b.parentNode;browserWidth=document.documentElement.clientWidth;browserHeight=document.documentElement.clientHeight;for(var d=0;d<numberOfSnowflakes;d++){var j=b.cloneNode(true);h.appendChild(j);var e=getPosition(50,browserWidth);var a=getPosition(50,browserHeight);var c=5+Math.random()*40;var g=4+Math.random()*10;var f=new Snowflake(j,g,c,e,a);snowflakes.push(f)}h.removeChild(b);moveSnowflakes()}function moveSnowflakes(){for(var b=0;b<snowflakes.length;b++){var a=snowflakes[b];a.update()}if(resetPosition){browserWidth=document.documentElement.clientWidth;browserHeight=document.documentElement.clientHeight;for(var b=0;b<snowflakes.length;b++){var a=snowflakes[b];a.xPos=getPosition(50,browserWidth);a.yPos=getPosition(50,browserHeight)}resetPosition=false}requestAnimationFrame(moveSnowflakes)}function getPosition(b,a){return Math.round(-1*b+Math.random()*(a+2*b))}function setResetFlag(a){resetPosition=true};
+	//]]>
+</script>
+
+<!DOCTYPE html>
+  <html lang="en">
+  <head>  
+  <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/live2d.css">
+      <link rel="stylesheet" href="assets/css/menu.css">
+      <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+      <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+
+<body class="Border" onLoad="onCreate()">               
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="https://s120-ava-talk.zadn.vn/6/0/4/6/19/120/f887ad9bb8f8b1ad113eb72623537e0a.jpg">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Gia Huy</span> 
+                    <span class="profession">My Profile Site</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="/">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="assets/html/forum.html">
+                            <i class='bx bx-chat icon' ></i>
+                            <span class="text nav-text">Diễn Đàn</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/idvietkhanh">
+                            <i class='bx bx bxl-facebook icon' ></i>
+                            <span class="text nav-text">Get Id Facebook</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-link icon'></i>
+                            <span class="text nav-text">Short Link</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-heart icon' ></i>
+                            <span class="text nav-text">Likes</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="BlurWebs">
+
+            <div class="Topnav">
+              <title>LuuGiaHuy - Profile</title>
+          </head>
+          <body>
+
+            <div class="wrapper">
+                <div class="toast">
+                  <div class="content">
+                    <div class="icon"><i class="uil uil-wifi"></i></div>
+                    <div class="details">
+                      <span>You're online now</span>
+                      <p>Hurray! Internet is connected.</p>
+                    </div>
+                  </div>
+                  <div class="close-icon"><i class="uil uil-times"></i></div>
+                </div>
+              </div>
+            
+              <script src="script.js"></script>
+            
+
+              <header class="profile container">
+                  <i class="ri-moon-line change-theme" id="theme-button"></i>
+                  <div class="profile__container grid">
+                      <div class="profile__data">
+                          <div class="profile__border">
+                              <div class="profile__perfil">
+                 <img src="https://s120-ava-talk.zadn.vn/6/0/4/6/19/120/f887ad9bb8f8b1ad113eb72623537e0a.jpg" alt="avt" style="width:540px;height:120px;">
+                              </div>
+                          </div>
+                          <h2 class="profile__name">Lưu Gia Huy</h2>
+                          <h3 class="profile__profession">Hello My Profile Site</h3>
+                          <ul class="profile__social">
+                              <a href="https://www.facebook.com/VietKhanh.User" target="_blank" class="profile__social-link">
+                                  <i class="ri-facebook-circle-fill"></i>
+                              </a>
+                              <a href="https://zalo.me/0867307919" target="_blank" class="profile__social-link">
+                                  <i class="ri-chat-1-fill"></i>
+                              </a>
+                              <a href="https://youtobe.com/" target="_blank" class="profile__social-link">
+                                  <i class="ri-youtobe-fill"></i>
+                              </a>
+                          </ul>
+                      </div>
+                      <div class="profile__info grid">
+                          <div class="profile__info-group">
+                              <h3 class="profile__info-number">2007</h3>
+                              <p class="profile__info-description">
+                                  Year of Birth<br> 
+                              </p>
+                          </div>
+                          <div class="profile__info-group">
+                              <h3 class="profile__info-number">100M +</h3>
+                              <p class="profile__info-description">
+                                Followers<br>
+                              </p>
+                          </div>
+                          <div class="profile__info-group">
+                              <h3 class="profile__info-number">Bình Thuận</h3>
+                              <p class="profile__info-description">Live In<br> </p>
+                          </div>
+                      </div>
+                      <div class="profile__buttons">
+                          <a href="" class="button">
+                              Music<i class="ri-music-2-fill"></i>
+                          </a>
+                      <div class="profile__buttons">
+                          <a href="assets/html/ttmxh.html" class="button">
+                              Inbox<i class="ri-inbox-fill"></i>
+                          </a>
+                        </div>
+                      <div class="profile__buttons">
+                          <a href="assets/html/contact.html" class="button">
+                              Contact<i class="ri-contacts-book-2-fill"></i>
+                          </a>
+                          </div>
+                      </div>
+                  </div>
+              </header>
+              <footer class="footer container">
+                  <span class="footer__copy">
+                      &#169; <a href=""></a> Code by Gia Huy
+                  </span>
+              </footer>
+    </section>
+
+
+
+
+    
+      <script src="assets/js/scrollreveal min.js"></script>
+      <script src="assets/js/main.js"></script>
+          <script src="https://cdn.jsdelivr.net/gh/CDNSFree2/heartclick.js@main/heartclick.js"></script>  
+<script>
+   $(window).on("load",function ( ){
+     $(."loader-wrapper").fadeOut("slow");
+});
+</script>
+<script src="assets/js/menu.js"></script>
+ 
+<audio autoplay>
+
+  <source src="assets/audio/vol2.mp3" type="audio/mpeg">
+
+</audio>
+<script src="assets/js/script.js"></script>
+</html>
